@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Selector</title>
+    <link href="css/selectbox.css" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <label for="menu">Select a the menu</label>
+        <select id="menu">
+            <option>--SELECT YOUR DISH--</option>
+            <option value="1">Uppitu</option>
+            <option value="2">Kesribath</option>
+            <option value="3">Pulav</option>
+            <option value="4">Chitrana</option>
+            <option value="5">Dosa</option>
+            <option value="6">Bath</option>
+        </select>
+        <select id="menu1">
+            <option>--SELECT YOUR DISH--</option>
+            <option value="1">Uppitu</option>
+            <option value="2">Kesribath</option>
+            <option value="3">Pulav</option>
+            <option value="4">Chitrana</option>
+            <option value="5">Dosa</option>
+            <option value="6">Bath</option>
+        </select>
+        <select id="menu2">
+            <option>--SELECT YOUR DISH--</option>
+            <option value="1">Uppitu</option>
+            <option value="2">Kesribath</option>
+            <option value="3">Pulav</option>
+            <option value="4">Chitrana</option>
+            <option value="5">Dosa</option>
+            <option value="6">Bath</option>
+        </select>
+        <select id="menu3">
+            <option>--SELECT YOUR DISH--</option>
+            <option value="1">Uppitu</option>
+            <option value="2">Kesribath</option>
+            <option value="3">Pulav</option>
+            <option value="4">Chitrana</option>
+            <option value="5">Dosa</option>
+            <option value="6">Bath</option>
+        </select>
+        <select id="menu4">
+            <option>--SELECT YOUR DISH--</option>
+            <option value="1">Uppitu</option>
+            <option value="2">Kesribath</option>
+            <option value="3">Pulav</option>
+            <option value="4">Chitrana</option>
+            <option value="5">Dosa</option>
+            <option value="6">Bath</option>
+        </select>
+        <select id="menu5">
+            <option>--SELECT YOUR DISH--</option>
+            <option value="1">Uppitu</option>
+            <option value="2">Kesribath</option>
+            <option value="3">Pulav</option>
+            <option value="4">Chitrana</option>
+            <option value="5">Dosa</option>
+            <option value="6">Bath</option>
+        </select>
+        <select id="menu6">
+            <option>--ENTER THE NUMBER OF PEOPLE--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <button id="btn">Get the Selected Index</button>
+    </form>
+    <script>
+        const btn = document.querySelector('#btn');
+        const sb = document.querySelector('#menu')
+        const sb1 = document.querySelector('#menu1')
+        const sb2 = document.querySelector('#menu2')
+        const sb3 = document.querySelector('#menu3')
+        const sb4 = document.querySelector('#menu4')
+        const sb5 = document.querySelector('#menu5')
+        const sb6 = document.querySelector('#menu6')
+        btn.onclick = (event) => {
+            event.preventDefault();
+            // show the selected index
+            
+            if(sb6.selectedIndex == 0 && sb.selectedIndex == 0 && sb1.selectedIndex == 0 && sb2.selectedIndex == 0 && sb3.selectedIndex == 0 && sb4.selectedIndex == 0 && sb5.selectedIndex == 0){
+                alert("Invaild Input");
+            }
+                alert(sb6.selectedIndex*10+"kgs rice");
+
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.menu1{
+    width:45%;
+    height:35px;
+    margin:auto;
+    float:left;
+    align-items:center;
+    justify-content: center;
+  }
+  .num1{
+  margin:auto;
+    width:45%;
+    height:30px;
+    float:right;
+    align-items:center;
+    justify-content: center;
+  }
+  .menu{
+    padding:200px;
+  }
